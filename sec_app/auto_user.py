@@ -5,7 +5,7 @@ import django
 django.setup()
 
 from faker import Faker
-from first_app.models import User
+from sec_app.models import User
 
 fakegen = Faker()
 
