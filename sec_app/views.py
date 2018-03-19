@@ -24,3 +24,9 @@ def form_detail_view(request):
             print(form.cleaned_data['email_id'])
 
     return render(request,'sec_app/from_details.html',{'form':form})
+
+def relative(request):
+    return render(request,'sec_app/relative_url.html')
+
+def home(request):
+    return render(request,'sec_app/home.html/')

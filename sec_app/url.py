@@ -1,10 +1,11 @@
 from django.urls import path
-from sec_app.views import index,user,form_detail_view
+from sec_app import views
 
-
+app_name = 'sec_app'
 urlpatterns = [
-    path('index/',index,name='index'),
-    path('users/',user,name = 'user'),
-    path ('form-details/',form_detail_view,name='form-details')
-
+    path('index/',views.index,name='index'),
+    path('users/',views.user,name = 'user'),
+    path ('form-details/',views.form_detail_view,name='form-details'),
+    path('relative/',views.relative,name = 'relative'),
+    path('home/',views.home,name = 'home')
 ]

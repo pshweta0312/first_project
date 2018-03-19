@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'sec_app/base.html' %}
+{% block body_block %}
 {% if user_list %}
     <table>
     <thead>
@@ -35,5 +31,4 @@
 {#    </ul>#}
 {#{% endfor %}#}
 {#</ol>#}
-</body>
-</html>
+{% endblock %}

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Welcome to Index</h1>
-</body>
-</html>
+{% extends 'sec_app/base.html' %}
+{% block body_block %}
+<h1>From Index.html</h1>
+<h2>{{ insert_me }}</h2>
+{{ second_key }}
+{% endblock %}
