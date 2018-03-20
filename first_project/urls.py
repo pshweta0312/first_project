@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from first_app import views
 from django.conf.urls import include
-
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first_app/',include('first_app.url')),
     path('sec_app/', include('sec_app.url')),
     path('third_app/',include('third_app.url')),
+
 ]
 
+urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_URL)
